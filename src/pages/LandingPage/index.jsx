@@ -1,3 +1,3 @@
 export function LandingPage() {
-  return <h1>Tela da LandingPage</h1>
+  return <h1>LadingPage</h1>
 }
