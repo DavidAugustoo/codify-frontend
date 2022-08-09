@@ -18,8 +18,21 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body, input, textarea, button {
-    font-family: 'Poppins', sans-serif;
+    font-family: ${({ theme }) => theme.fonts.regular}, sans-serif;
     font-weight: 400;
     font-size: 1rem;
   }
+
+  a {
+    text-decoration: none;
+  }
+
+  button {
+    cursor: pointer;
+  }
+    
+  ul {
+    list-style: none;
+  }
+
 `
