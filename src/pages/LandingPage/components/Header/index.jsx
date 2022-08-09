@@ -2,7 +2,7 @@ import {
   HeaderContainer,
   NavDesktopContainer,
   NavMobileContainer,
-  // MobileButton,
+  MobileButton,
 } from './styles'
 
 import codifyLogoImg from '../../../../assets/codify-logo.svg'
@@ -48,7 +48,9 @@ export function Header() {
           <List size={45} />
         </MobileButton> */}
 
-        <Hamburger toggled={isOpen} toggle={setOpen} />
+        <MobileButton>
+          <Hamburger toggled={isOpen} toggle={setOpen} />
+        </MobileButton>
 
         <ButtonsArea />
       </div>
