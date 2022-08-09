@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
   width: 100%;
-  background-color: ${({ theme }) => theme['gray-200']};
+  background-color: ${({ theme }) => theme.colors['base-background']};
   padding: 0px 2rem;
 
   > div {
@@ -14,11 +14,6 @@ export const HeaderContainer = styled.header`
 `
 
 export const NavContainer = styled.ul`
-  display: flex;
-  gap: 1rem;
-`
-
-export const ButtonsContainer = styled.div`
   display: flex;
   gap: 1rem;
 `

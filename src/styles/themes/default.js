@@ -1,13 +1,27 @@
 export const defaultTheme = {
-  white: '#FFF',
+  colors: {
+    'base-white': '#FFFFFF',
+    'base-background': '#F2F3F6',
+    'base-card': '#FDFDFD',
+    'base-input': '#FFFFFF',
+    'base-button': '#1A75E8',
+    'base-button-hover': '#368FFC',
+    'base-button-transparent': 'transparent',
+    'base-text': '#686868',
+    'base-title': '#000000',
+    'base-error': '#f84747',
+    'brand-blue-dark': '#001334',
+    'brand-blue': '#1A75E8',
+  },
+  textSizes: {
+    'title-l': '2.7rem',
+    'title-m': '2rem',
+    'title-s': '1.2rem',
 
-  'gray-100': '#FAFAFA',
-  'gray-200': '#F2F3F6',
-  'gray-500': '#686868',
-
-  'blue-300': '#368ffc',
-  'blue-500': '#1A75E8',
-  'blue-800': '#0F1137',
-
-  black: '#000',
+    'text-m': '1rem',
+    'text-s': '0.9rem',
+  },
+  fonts: {
+    regular: "'Poppins'",
+  },
 }

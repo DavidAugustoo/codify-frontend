@@ -1,12 +1,12 @@
 import { Route, Routes } from 'react-router-dom'
-import { DefaultLayout } from './layouts/DefaultLayout'
+import { LandingLayout } from './layouts/LandingLayout'
 
 import { LandingPage } from './pages/LandingPage'
 
 export function Router() {
   return (
     <Routes>
-      <Route path="/" element={<DefaultLayout />}>
+      <Route path="/" element={<LandingLayout />}>
         <Route path="/" element={<LandingPage />} />
       </Route>
     </Routes>

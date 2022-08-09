@@ -1,3 +1,3 @@
 export function LandingPage() {
-  return <h1>LadingPage</h1>
+  return <h1>...</h1>
 }

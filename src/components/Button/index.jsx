@@ -1,20 +1,14 @@
 import { ButtonStyle } from './styles'
 
-export function Button({
-  title,
-  path,
-  backgroundColor,
-  hoverBackgroundColor,
-  textColor,
-}) {
+export function Button(props) {
   return (
     <ButtonStyle
-      href={path}
-      backgroundColor={backgroundColor}
-      hoverBackgroundColor={hoverBackgroundColor}
-      textColor={textColor}
+      href={props.path}
+      backgroundColor={props.backgroundColor}
+      hoverBackgroundColor={props.hoverBackgroundColor}
+      textColor={props.textColor}
     >
-      {title}
+      {props.title}
     </ButtonStyle>
   )
 }
