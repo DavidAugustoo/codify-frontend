@@ -1,6 +1,6 @@
 import { NavLink } from './styles'
 
-export function NavItem({ title, path }) {
+export function NavDesktopItem({ title, path }) {
   return (
     <li>
       <NavLink href={path}>{title}</NavLink>
