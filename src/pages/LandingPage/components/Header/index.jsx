@@ -2,16 +2,17 @@ import {
   HeaderContainer,
   NavDesktopContainer,
   NavMobileContainer,
-  MobileButton,
+  // MobileButton,
 } from './styles'
 
 import codifyLogoImg from '../../../../assets/codify-logo.svg'
-import { List } from 'phosphor-react'
+// import { List } from 'phosphor-react'
 
 import { NavDesktopItem } from '../../components/Header/components/NavDesktopItem'
 import { NavMobileItem } from '../../components/Header/components/NavMobileItem'
 import { ButtonsArea } from './components/ButtonsContainer'
 import { useState } from 'react'
+import Hamburger from 'hamburger-react'
 
 const NavDesktopLinks = [
   { title: 'Home', path: '/home' },
@@ -28,7 +29,7 @@ const NavMobileLinks = [
 ]
 
 export function Header() {
-  const [isNavExpanded, setIsNavExpanded] = useState(false)
+  const [isOpen, setOpen] = useState(false)
 
   return (
     <HeaderContainer>
@@ -43,14 +44,16 @@ export function Header() {
           </NavDesktopContainer>
         </nav>
 
-        <MobileButton onClick={() => setIsNavExpanded(!isNavExpanded)}>
+        {/* <MobileButton onClick={() => setIsNavExpanded(!isNavExpanded)}>
           <List size={45} />
-        </MobileButton>
+        </MobileButton> */}
+
+        <Hamburger toggled={isOpen} toggle={setOpen} />
 
         <ButtonsArea />
       </div>
 
-      {isNavExpanded ? (
+      {isOpen ? (
         <NavMobileContainer>
           {NavMobileLinks.map(({ title, path }) => (
             <NavMobileItem key={path} title={title} path={path} />
