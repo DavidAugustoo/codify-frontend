@@ -12,4 +12,11 @@ export const LayoutContainer = styled.div`
       margin: 0px auto;
     }
   }
+
+  @media (max-width: 1280px) {
+    .container {
+      max-width: 76rem;
+      margin: 0px auto;
+    }
+  }
 `

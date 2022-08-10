@@ -35,4 +35,10 @@ export const GlobalStyle = createGlobalStyle`
     list-style: none;
   }
 
+  @media (max-width: 1366px) {
+    html {
+      font-size: 14px;
+    }
+  }
+
 `
