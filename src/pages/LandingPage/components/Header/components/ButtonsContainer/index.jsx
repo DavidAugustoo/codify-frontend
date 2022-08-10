@@ -25,12 +25,13 @@ export function ButtonsArea() {
       {Buttons.map((button) => (
         <Button
           key={button.path}
-          title={button.title}
           path={button.path}
           backgroundColor={button.backgroundColor}
           hoverBackgroundColor={button.hoverBackgroundColor}
           textColor={button.textColor}
-        />
+        >
+          {button.title}
+        </Button>
       ))}
     </ButtonsContainer>
   )

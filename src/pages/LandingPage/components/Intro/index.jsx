@@ -5,9 +5,11 @@ import {
   IntroDescripton,
   IntroImageContainer,
 } from './styles'
-import { Button } from '../../../../components/Button'
+// import { Button } from '../../../../components/Button'
 
 import introImg from '../../../../assets/intro-image.svg'
+import { Button } from '../../../../components/Button'
+import { ArrowRight } from 'phosphor-react'
 
 const Buttons = [
   {
@@ -44,7 +46,9 @@ export function Intro() {
               backgroundColor={button.backgroundColor}
               hoverBackgroundColor={button.hoverBackgroundColor}
               textColor={button.textColor}
-            />
+            >
+              Começar <ArrowRight size={22} weight="bold" />
+            </Button>
           ))}
         </IntroDescripton>
 

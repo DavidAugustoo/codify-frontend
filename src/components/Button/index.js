@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const ButtonStyle = styled.a`
+export const Button = styled.a`
   background-color: ${({ theme, backgroundColor }) =>
     theme.colors[`${backgroundColor}`]};
   border: none;
@@ -11,6 +11,13 @@ export const ButtonStyle = styled.a`
   max-width: 160px;
   text-align: center;
   font-weight: 500;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  cursor: pointer;
 
   &:hover {
     background-color: ${({ theme, hoverBackgroundColor }) =>
