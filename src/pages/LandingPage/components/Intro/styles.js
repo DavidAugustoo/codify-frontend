@@ -7,6 +7,10 @@ export const IntroContainer = styled.section`
 export const IntroArea = styled.div`
   display: flex;
   padding: 6.25rem 2rem;
+
+  @media (max-width: 990px) {
+    flex-direction: column;
+  }
 `
 
 export const IntroDescripton = styled.div`
@@ -23,5 +27,9 @@ export const IntroImageContainer = styled.div`
     width: 35rem;
     position: absolute;
     right: 0;
+  }
+
+  @media (max-width: 990px) {
+    display: none;
   }
 `
