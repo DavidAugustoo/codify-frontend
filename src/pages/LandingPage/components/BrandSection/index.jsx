@@ -1,8 +1,8 @@
 import { BrandsSectionContainer } from './styles'
 
-import brandFiap from '../../../assets/brand-fiap.svg'
-import brandIbm from '../../../assets/brand-ibm.svg'
-import brandTopa from '../../../assets/brand-topa.svg'
+import brandFiap from '../../../../assets/brand-fiap.svg'
+import brandIbm from '../../../../assets/brand-ibm.svg'
+import brandTopa from '../../../../assets/brand-topa.svg'
 
 export function BrandSection() {
   return (

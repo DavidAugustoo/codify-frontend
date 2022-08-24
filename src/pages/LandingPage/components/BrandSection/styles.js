@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const BrandsSectionContainer = styled.div`
+export const BrandsSectionContainer = styled.section`
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
