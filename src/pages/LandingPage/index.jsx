@@ -1,3 +1,12 @@
+import { LandingPageContainer } from './styles'
+import { Intro } from '../../pages/LandingPage/components/Intro'
+import { BrandSection } from './Brands'
+
 export function LandingPage() {
-  return <h1>...</h1>
+  return (
+    <LandingPageContainer>
+      <Intro />
+      <BrandSection />
+    </LandingPageContainer>
+  )
 }
